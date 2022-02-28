@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto</title><!-- Titulo provisional -->
+</head>
+<header class="encabezado">
+    <div class="encabezado__logo">
+        <a  href="../index.html"><i class="fas fa-brain"></i></a>
+    </div>
+    
+    <nav class="encabezado__menu">
+
+        <div class="menu__responsive">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <ul class="menu">
+            <li class="menu__item"><a href="../pages/especialidades.html">Especialidades</a></li>
+            <li class="menu__item"><a href="../pages/blog.html">Blog</a></li>
+            <li class="menu__item"><a href="../pages/sobre_mi.html">Sobre mi</a></li>
+            <li class="menu__item"><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main>
+        <h2 class="contacta">Contacta con nosotros sin compromiso</h2>
+        <form class="formulario" action="" method="POST" enctype="multipart/form-data"><!-- Aun no tengo asignado el fichero que procesara la informacion -->
+
+            <div class="nombre tipo">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+
+            <div class="apellidos tipo">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" required>
+            </div>
+
+            <div class="correo tipo">
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="info tipo">
+                <label for="info">Sobre ti</label>
+                <textarea name="info" id="info" required></textarea><!-- Le asigno las dimensiones con css -->
+            </div>
+            
+            <input type="submit" value="Enviar" class="boton">
+        </form>
+    </main>
+    
+    <footer>
+        <div>
+            <ul class="redes">
+                <li><a class="twit" href="https://twitter.com/?lang=es" target="blanck"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="face" href="https://es-es.facebook.com/" target="blanck"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="insta" href="https://www.instagram.com/?hl=es" target="blanck"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="ytube" href="https://www.youtube.com/" target="blanck"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div><p>Desarrollado por Victor Medina &copy;</p></div>
+    </footer>
+    
+</body>
+</html>
