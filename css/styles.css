@@ -25,6 +25,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: white;
+}
+
 ul{
     list-style: none;
 }
@@ -58,7 +62,7 @@ h1,h2,h3,h4,h5, p, a{
 
 /* Header */
 
-.encabezado{
+ .encabezado{
     width: auto;
     height: auto;
     background: #95C5EF;
@@ -87,25 +91,13 @@ h1,h2,h3,h4,h5, p, a{
     width: 75%;
 }
 
-.menu__responsive{
-    float: right;
-    margin-right: 40px;
-    font-size: 40px;
-    color: #fff;
-}
-
-.menu__responsive:hover{
-    cursor: pointer;
-}
-
-.menu{
-    display: none;
-    justify-content: space-evenly;
-}
-
 .menu__item a{
     font-size: 22px;
     font-weight: 500; 
+    color: #fff;
+}
+
+.menu__item a:hover{
     color: white;
 }
 
@@ -113,7 +105,7 @@ h1,h2,h3,h4,h5, p, a{
     content:"";
     position: relative;
     display: block;
-    top: 40px;
+    top: 50px;
     height: 3px;
     border-radius: 5px;
     background-color:#ff8f9500;
@@ -121,10 +113,28 @@ h1,h2,h3,h4,h5, p, a{
 }
 
 .menu__item:hover::before{
-    top: 33px;
+    top: 44px;
     background-color:#ffffff;
     width: 100%;
 }
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-dark .navbar-toggler{
+    color:rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    left: 80%;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:rgb(255, 255, 255);
+}
+
 
 /* Index */
 
@@ -179,11 +189,9 @@ h1,h2,h3,h4,h5, p, a{
 
 .especialidad{
     margin: 0 20px 30px 20px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     transition: all .35s ease;
+    border: none;
 }
 
 .especialidad:hover{
@@ -191,13 +199,14 @@ h1,h2,h3,h4,h5, p, a{
 }
 
 .especialidad img{
+    max-width:400px;
     height: 250px;
     border-radius: 10px;
 }
 
 .especialidad h3{
     font-size: 24px;
-    margin: 20px 0;
+    margin: 20px 0; 
     color: #84afd4;
 }
 
@@ -219,21 +228,10 @@ h1,h2,h3,h4,h5, p, a{
     color: #84afd4;
 }
 
-.formulario{
-    margin: 40px auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
 .tipo{
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-
-.nombre, .apellidos{
     width: 100%;
 }
 
@@ -269,7 +267,7 @@ h1,h2,h3,h4,h5, p, a{
     min-width: 100%;
 }
 
-.formulario input[type="submit"]{
+.form input[type="submit"]{
     font-size: 20px;
     margin: 40px auto 0 auto;
     padding: 15px 60px;
@@ -281,81 +279,26 @@ h1,h2,h3,h4,h5, p, a{
     margin-bottom: 30px;
 }
 
-.containerBlog{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "a1"
-                         "a2"
-                         "a3" 
-                         "a4"
-                         "a5" 
-                         "a6"
-                         "a7" 
-                         "a8";
-    grid-template-rows: 300px;
-    justify-content: center;
-    row-gap: 60px;
-    margin: 0 20px 40px 20px;
+.containerBlog .row{
+    margin-bottom: 30px;
 }
-
 
 .containerBlog__hijo img{
     width: 380px;
     height: 300px;
     border-radius: 5px;
-}
-
-.articulo{
-    width: 90%;
-    margin: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.articulo h2{
-    color: #95C5EF;
-}
-
-.articulo p{
-    font-size: 16px;
-    line-height: 26px;
-    margin-top: 20px;
-}
-
-.articulo button{
-    width: 180px;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /* Sobre mi */
 
-.tituloYo{
-    margin-bottom: 20px;
-    color: #95C5EF
-}
-
-.sobreMi{
-    margin: 40px;
-    margin-bottom: 40px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-}
-
 .sobreMi img{
-    width: 300px;
-    height: 350px;
-    border-radius: 5px;
+    max-width: 500px;
+    height: 400px;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
-.sobreMi p{
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-}
 
 .iconito{
     margin: 0 auto;
@@ -433,9 +376,9 @@ footer div p{
     transition: all .35s ease-in-out;
 }
 
-.redes li:hover{
-    rotate: 360deg;
-}
+/* .redes li:hover{
+    rotate: 180deg;
+} */
 
 .twit{
     color:rgb(29, 155, 240, 0.788);
@@ -475,18 +418,6 @@ footer div p{
 
 /* Medias query */
 
-@media only screen and ( min-width: 600px ){
-
-    /* Menu responsive */
-    .menu{
-        display: flex;
-    }
-
-    .menu__responsive{
-        display: none;
-    }
-}
-
 
 @media only screen and (min-width: 768px){
     /* Especialidades */
@@ -500,47 +431,11 @@ footer div p{
     .especialidad p{
         margin: 0;
     }
-    /* Blog */
-
-    .containerBlog{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "a1 a2"
-                             "a3 a4"
-                             "a5 a6"
-                             "a7 a8";
-        grid-template-rows: 300px 300px;
-        justify-items: center;
-        row-gap: 60px;
-        margin: 0 20px 40px 20px;
-    }
-
-    .primero{
-        grid-area: a3;
-    }
     
-    .segundo{
-        grid-area: a4;
-    }
-    
-    .tercero{
-        grid-area: a8;
-    }
-    
-    .cuarto{
-        grid-area: a7;
-    }
 
-    /* Formulario */
-
-    .formulario{
-        width: 70%;
+    .sobreMi p{
+        margin-left: 50px;
     }
-
-    .nombre, .apellidos{
-        width: 40%;
-    }
-
    
 
     /* Footer */
@@ -557,10 +452,6 @@ footer div p{
 }
 
 @media only screen and ( min-width: 1024px){
-    /* Index */
-    .fondoIndex{
-        height: calc(100vh - 135px);
-    }
 
     /* Especialidades */
     .especialidades{
@@ -568,21 +459,6 @@ footer div p{
         grid-template-columns: 1fr 1fr 1fr;   
         grid-template-areas: "e1 e2 e3"
                              "e4 e5 e6";
-    }
-
-    /* Sobre mi */
-    .sobreMi{   
-        flex-direction: row; 
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .sobreMi p{
-        width: 70%;
-        margin-left: 70px;
-        font-size: 18px;
-        line-height: 28px;
-        text-align: left;
     }
 
     .curriculum{
@@ -618,9 +494,8 @@ footer div p{
     95%{
         width: 90%
     }
-
-
 }
+
 
 
 
