@@ -34,7 +34,7 @@ ul{
 }
 
 h1{    
-    font-size: 28px;
+    font-size: 30px;
     padding: 10px;
     color:#4b4b4b;
 }
@@ -171,6 +171,7 @@ h1,h2,h3,h4,h5, p, a{
     display: inline-block;
     font-size: 20px;
     margin-top: 70px;
+    margin-bottom: 30px;
     padding: 15px 80px;
 }
 
@@ -188,7 +189,7 @@ h1,h2,h3,h4,h5, p, a{
    
 
 .especialidad{
-    margin: 0 20px 30px 20px;
+    margin: 0 20px 50px 20px;
     align-items: center;
     transition: all .35s ease;
     border: none;
@@ -224,21 +225,21 @@ h1,h2,h3,h4,h5, p, a{
 /* Formulario */
 
 .contacta{
-    padding: 10px 0;
+    padding: 20px 0;
     color: #84afd4;
+    margin-bottom: 20px;
 }
 
 
 .tipo{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .tipo label,
 .tipo input,
 .tipo textarea{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .tipo label{
@@ -290,6 +291,20 @@ h1,h2,h3,h4,h5, p, a{
     margin-bottom: 10px;
 }
 
+.containerBlog article{
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.containerBlog article h2{
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.containerBlog article button{
+    margin: 20px;
+}
+
 /* Sobre mi */
 
 .sobreMi img{
@@ -299,6 +314,9 @@ h1,h2,h3,h4,h5, p, a{
     border-radius: 20px;
 }
 
+.sobreMi p{
+    font-size: 20px;    
+}
 
 .iconito{
     margin: 0 auto;
@@ -376,12 +394,9 @@ footer div p{
     transition: all .35s ease-in-out;
 }
 
-/* .redes li:hover{
-    rotate: 180deg;
-} */
 
 .twit{
-    color:rgb(29, 155, 240, 0.788);
+    color:rgb(255, 255, 255);
     transition: color .35s ease-in-out;
 }
 
@@ -390,7 +405,7 @@ footer div p{
 }
 
 .face{
-    color:rgb(20, 112, 173, 0.788);
+    color:rgb(255, 255, 255);
     transition: color .35s ease-in-out;
 }
 
@@ -399,7 +414,7 @@ footer div p{
 }
 
 .insta{
-    color:rgba(240, 29, 152, 0.788);
+    color:rgb(255, 255, 255);
     transition: color .35s ease-in-out;
 }
 
@@ -408,7 +423,7 @@ footer div p{
 }
 
 .ytube{
-    color:rgba(240, 29, 29, 0.788);
+    color:rgb(255, 255, 255);
     transition: color .35s ease-in-out;
 }
 
@@ -431,12 +446,19 @@ footer div p{
     .especialidad p{
         margin: 0;
     }
-    
 
     .sobreMi p{
         margin-left: 50px;
     }
-   
+
+    .nombre{
+        margin-right: auto;
+    }
+
+    .containerBlog article{
+        margin-top: 0;
+        padding: 0 20px;
+    }
 
     /* Footer */
     footer{
@@ -449,6 +471,12 @@ footer div p{
         font-size: 40px;
     }
 
+}
+
+@media only screen and ( min-width: 996px){
+    .formu{
+        max-width: 70vw;
+    }
 }
 
 @media only screen and ( min-width: 1024px){
@@ -465,6 +493,10 @@ footer div p{
         margin: 0 100px;
     }   
 
+    /* Formulaio */
+
+    
+
     /* Footer */
 
     footer div{
@@ -477,6 +509,7 @@ footer div p{
 }
 
 /* Animaciones */
+
 
 @keyframes estirar{
     5%{
