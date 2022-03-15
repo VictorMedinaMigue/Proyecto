@@ -1,0 +1,56 @@
+
+.sobreMi{
+
+    img{
+        max-width: 500px;
+        height: 400px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    p{
+        font-size: 20px;    
+    }
+}
+
+.iconito{
+    margin: 0 auto;
+    width: 90%;
+    height: 5px;
+    border-radius: 4px;
+    background-color: $colorBoton;
+    animation-duration: 5s;
+    animation-name: estirar;
+    animation-iteration-count: infinite;
+}
+
+.curriculum{
+    margin: 0 50px;
+
+    h2{
+        margin-bottom: 40px;
+    }
+
+    article{
+        margin-top: 20px;
+    }
+
+    p{
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+.mapa{
+    margin: 40px 60px;
+
+    iframe{
+        width: 100%;
+        border-radius: 10px;
+        height: 300px;
+    }
+}
+
+

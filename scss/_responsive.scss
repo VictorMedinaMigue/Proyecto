@@ -1,0 +1,79 @@
+@media only screen and (min-width: 768px){
+    /* Especialidades */
+    .especialidades{
+        margin: 30px 30px 0 30px;
+        grid-template-columns: 1fr 1fr;   
+        grid-template-areas: "e1 e2"
+                             "e3 e4"
+                             "e5 e6";
+
+        .especialidad{
+            p{
+                margin: 0;
+            }
+        }
+    }
+    
+
+    .sobreMi p{
+        margin-left: 50px;
+    }
+
+    .nombre{
+        margin-right: auto;
+    }
+
+    .containerBlog article{
+        margin-top: 0;
+        padding: 0 20px;
+    }
+
+    /* Footer */
+    footer{
+        flex-direction: row;
+
+        .redes{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 50px;
+            font-size: 40px;
+        }   
+    }
+
+    
+
+}
+
+@media only screen and ( min-width: 996px){
+    .formu{
+        max-width: 70vw;
+    }
+}
+
+@media only screen and ( min-width: 1024px){
+
+    /* Especialidades */
+    .especialidades{
+        margin: 30px 30px 0 30px;
+        grid-template-columns: 1fr 1fr 1fr;   
+        grid-template-areas: "e1 e2 e3"
+                             "e4 e5 e6";
+    }
+
+    .curriculum{
+        margin: 0 100px;
+    }   
+
+    /* Footer */
+
+    footer{
+        .redes li{
+            margin: 20px;
+        }
+
+        div{
+            margin: 10px;
+        }
+    } 
+
+   
+}

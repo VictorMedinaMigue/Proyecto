@@ -1,0 +1,72 @@
+
+
+.encabezado {
+    width: auto;
+    height: auto;
+    background: $colorPrincipal;
+    padding: 12px;
+    display: flex;
+    align-items: center; 
+  
+    .encabezado__logo {
+      width: 25%;
+      display: flex;
+      justify-content: center; 
+    
+        a {
+          font-size: 40px;
+          color: $colorBlanco;
+          transition: all .35s ease-in-out; 
+      
+        &:hover{
+          color: $colorBoton; }}
+    }
+  
+  .encabezado__menu {
+    width: 75%; 
+
+    .menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+
+    .menu__item{
+        a {
+          font-size: 22px;
+          font-weight: 500;
+          color: $colorBlanco; 
+        
+            &:hover {
+            color: $colorBlanco; }
+        }
+
+        &::before {
+          content: "";
+          position: relative;
+          display: block;
+          top: 50px;
+          height: 3px;
+          border-radius: 5px;
+          background-color: #ff8f9500;
+          transition: all .2s ease-in-out; }
+        
+        &:hover::before {
+          top: 44px;
+          background-color: $colorBlanco;
+          width: 100%; }
+      }
+  }
+  
+  .navbar-dark{
+     .navbar-toggler {
+        color: $colorBlanco;
+        border: 2px solid $colorBlanco;
+        position: relative;
+        left: 80%; }
+  
+      .navbar-nav{
+        .nav-link {
+          color: $colorBlanco; }
+      } 
+  }
+}

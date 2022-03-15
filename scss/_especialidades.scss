@@ -1,0 +1,56 @@
+.especialidades{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;   
+    grid-template-areas: "e1" "e2" "e3"
+                         "e4" "e5" "e6";
+    justify-content: space-evenly; 
+    
+    .especialidad{
+        margin: 0 20px 50px 20px;
+        align-items: center;
+        transition: all .35s ease;
+        border: none;
+
+        img{
+            max-width:400px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        h3{
+            font-size: 24px;
+            margin: 20px 0; 
+            color: $colorTitulo;
+        }
+
+        p{
+            color:rgb(83, 83, 83);
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 40px;
+        }
+
+        button{
+            margin: 20px 0;
+        }
+
+        &:hover{
+            scale: 1.1;
+        }
+        
+    }
+}
+   
+
+
+
+
+
+
+
+
+
+
+
