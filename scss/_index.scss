@@ -1,5 +1,4 @@
 .fondoIndex {
-  height: auto;
   padding-top: 40px;
   background-image: url(../images/fondo-nube.png);
   background-repeat: no-repeat;
@@ -11,7 +10,6 @@
       padding: 20px 40px; 
       
       h1 {
-        font-size: 36px;
         margin-bottom: 20px; }
       
       h2 {
@@ -25,7 +23,7 @@
       a {
         display: inline-block;
         font-size: 20px;
-        margin-top: 70px;
+        margin-top: 40px;
         margin-bottom: 30px;
         padding: 15px 80px; }
   }

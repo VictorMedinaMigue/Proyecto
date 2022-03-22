@@ -10,6 +10,11 @@
     height: auto;
     padding: 30px;
     text-align: center; }
+
+  section{
+    @extend main ;
+    margin: 0 20px;
+  }
   
   img {
     max-width: 100%; }
@@ -28,16 +33,29 @@
     text-align: center;
     color: $colorTexto; }
 
-  h1, h2{
-      color: $colorTitulo;
-  }
+  
 
   h1{
-    font-size: 30px;
+    @include texto(30px, 600, $colorTitulo, 54px);
     padding: 10px;
-    font-size: 30px;
     margin-bottom: 30px;
+    strong{
+      font-size: 50px;
+    }
   }
+
+  h2{
+    @include texto(26px, 500, $colorTitulo, 40px);
+  }
+
+  h3{
+    @include texto(24px, 500, $colorTitulo, 40px);
+  }
+
+  p{
+    @include texto(16px, 400, $colorTexto, 24px);
+  }
+
   
   .boton {
     padding: 10px 15px;

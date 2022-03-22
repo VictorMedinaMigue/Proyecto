@@ -38,6 +38,14 @@
     }
 }
 
+.formu{
+    input[type='submit']{
+        @extend .boton;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
 
 
 

@@ -6,11 +6,14 @@
 body {
   width: 100%; }
 
-main {
+main, section {
   width: auto;
   height: auto;
   padding: 30px;
   text-align: center; }
+
+section {
+  margin: 0 20px; }
 
 img {
   max-width: 100%; }
@@ -28,23 +31,42 @@ h1, h2, h3, h4, h5, p, a {
   text-align: center;
   color: #535353; }
 
-h1, h2 {
-  color: #84afd4; }
-
 h1 {
   font-size: 30px;
+  font-weight: 600;
+  color: #84afd4;
+  line-height: 54px;
   padding: 10px;
-  font-size: 30px;
   margin-bottom: 30px; }
+  h1 strong {
+    font-size: 50px; }
 
-.boton {
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #84afd4;
+  line-height: 40px; }
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #84afd4;
+  line-height: 40px; }
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #535353;
+  line-height: 24px; }
+
+.boton, .formu input[type='submit'] {
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
   background-color: #ff8f95;
   transition: all .35s ease-in-out;
   color: white; }
-  .boton:hover {
+  .boton:hover, .formu input:hover[type='submit'] {
     cursor: pointer;
     background-color: #e2565d;
     scale: 1.1; }
@@ -100,7 +122,6 @@ h1 {
     color: white; }
 
 .fondoIndex {
-  height: auto;
   padding-top: 40px;
   background-image: url(../images/fondo-nube.png);
   background-repeat: no-repeat;
@@ -110,7 +131,6 @@ h1 {
     height: 100%;
     padding: 20px 40px; }
     .fondoIndex .fondoIndex__container h1 {
-      font-size: 36px;
       margin-bottom: 20px; }
     .fondoIndex .fondoIndex__container h2 {
       font-size: 30px;
@@ -121,7 +141,7 @@ h1 {
     .fondoIndex .fondoIndex__container a {
       display: inline-block;
       font-size: 20px;
-      margin-top: 70px;
+      margin-top: 40px;
       margin-bottom: 30px;
       padding: 15px 80px; }
 
@@ -142,13 +162,9 @@ h1 {
       height: 250px;
       border-radius: 10px; }
     .especialidades .especialidad h3 {
-      font-size: 24px;
       margin: 20px 0;
       color: #84afd4; }
     .especialidades .especialidad p {
-      color: #535353;
-      font-size: 16px;
-      line-height: 24px;
       margin: 0 40px; }
     .especialidades .especialidad button {
       margin: 20px 0; }
@@ -182,6 +198,10 @@ h1 {
     max-width: 100%;
     min-width: 100%; }
 
+.formu input[type='submit'] {
+  width: 200px;
+  margin-bottom: 20px; }
+
 .tituloBlog {
   margin-bottom: 30px; }
 
@@ -210,7 +230,10 @@ h1 {
   border-radius: 20px; }
 
 .sobreMi p {
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 400;
+  color: #535353;
+  line-height: 30px; }
 
 .iconito {
   margin: 0 auto;
@@ -232,14 +255,14 @@ h1 {
     text-align: left;
     margin-bottom: 20px;
     font-size: 18px;
+    font-weight: 400;
+    color: #535353;
     line-height: 28px; }
 
-.mapa {
-  margin: 40px 60px; }
-  .mapa iframe {
-    width: 100%;
-    border-radius: 10px;
-    height: 300px; }
+.mapa iframe {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px; }
 
 footer {
   height: auto;
