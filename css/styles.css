@@ -35,7 +35,7 @@ h1 {
   font-size: 30px;
   font-weight: 600;
   color: #84afd4;
-  line-height: 54px;
+  line-height: 44px;
   padding: 10px;
   margin-bottom: 30px; }
   h1 strong {
@@ -87,7 +87,7 @@ p {
       color: white;
       transition: all .35s ease-in-out; }
       .encabezado .encabezado__logo a:hover {
-        color: #ff8f95; }
+        color: #ffcacc; }
   .encabezado .encabezado__menu {
     width: 75%; }
     .encabezado .encabezado__menu .menu {
@@ -123,7 +123,7 @@ p {
 
 .fondoIndex {
   padding-top: 40px;
-  background-image: url(../images/fondo-nube.png);
+  background-image: url(../images/relax.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -131,18 +131,21 @@ p {
     height: 100%;
     padding: 20px 40px; }
     .fondoIndex .fondoIndex__container h1 {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      color: #5b9bd3; }
     .fondoIndex .fondoIndex__container h2 {
       font-size: 30px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      color: #5b9bd3; }
     .fondoIndex .fondoIndex__container p {
       font-size: 20px;
-      line-height: 50px; }
+      line-height: 50px;
+      color: white; }
     .fondoIndex .fondoIndex__container a {
       display: inline-block;
       font-size: 20px;
-      margin-top: 40px;
-      margin-bottom: 30px;
+      margin-top: 50px;
+      margin-bottom: 40px;
       padding: 15px 80px; }
 
 .especialidades {
