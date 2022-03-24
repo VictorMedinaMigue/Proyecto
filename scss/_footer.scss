@@ -20,6 +20,12 @@ footer{
             margin: 0 20px;
             transition: all .35s ease-in-out;
 
+            
+            &:hover{
+                    scale: 1.3;
+            }
+            
+
             .twit{
                 color:$colorBlanco;
                 transition: color .35s ease-in-out;

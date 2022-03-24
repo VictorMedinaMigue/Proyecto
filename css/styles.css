@@ -283,6 +283,8 @@ footer {
     footer .redes li {
       margin: 0 20px;
       transition: all .35s ease-in-out; }
+      footer .redes li:hover {
+        scale: 1.3; }
       footer .redes li .twit {
         color: white;
         transition: color .35s ease-in-out; }
