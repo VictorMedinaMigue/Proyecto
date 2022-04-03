@@ -11,21 +11,22 @@
       
       h1 {
         margin-bottom: 20px;
-        color: $colorTituloPrincipal; 
-        
+        color: $colorTituloPrincipal;
+        text-shadow: .5px .1px 1px black;         
       }
       
       h2 {
         font-size: 30px;
         margin-bottom: 50px; 
-        color: $colorTituloPrincipal;}
+        color: $colorTituloPrincipal;
+        text-shadow: .5px .1px 1px black;}
 
       p {
         margin-top: 120px;
         font-size: 20px;
         line-height: 50px;
         color: white;
-
+        text-shadow: 1px .5px 5px black;
        }
       
       a {
