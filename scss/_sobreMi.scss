@@ -1,6 +1,6 @@
 
 .sobreMi{
-
+    margin: 0 20px;
     img{
         max-width: 500px;
         height: 400px;
@@ -9,11 +9,11 @@
     }
 
     p{
-        @include texto(20px, 400, $colorTexto, 30px);  
+        @include texto(18px, 400, $colorTexto, 30px);  
     }
 }
 
-.iconito{
+.iconito{   
     margin: 0 auto;
     margin-top: 20px;
     width: 90%;
@@ -26,7 +26,7 @@
 }
 
 .curriculum{
-    margin: 0 50px;
+    margin: 0 25px;
 
     h2{
         margin-bottom: 40px;

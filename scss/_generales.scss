@@ -1,75 +1,74 @@
 * {
     margin: 0;
     padding: 0; }
-  
-  body {
-    width: 100%; 
-    background-color: $colorFondo;
-    }
-  
-  main {
-    width: auto;
-    height: auto;
-    padding: 30px;
-    text-align: center; 
-  }
 
-  section{
-    @extend main ;
-    margin: 0 20px;
+body {
+  width: 100%; 
+  background-color: $colorFondo;
   }
   
-  img {
-    max-width: 100%; }
-  
-  a {
-    text-decoration: none; 
-  
+main {
+  width: auto;
+  height: auto;
+  padding: 30px;
+  text-align: center; 
+}
+
+section{
+  @extend main ;
+  margin: 0 20px;
+}
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; 
+
+  &:hover {
+    color: $colorBlanco; }}
+
+ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, p, a {
+  font-family:  Source Sans Pro, Helvetica, sans-serif;
+  text-align: center;
+  color: $colorTexto; }
+
+
+
+h1{
+  @include texto(30px, 600, $colorTitulo, 44px);
+  padding: 10px;
+  margin-bottom: 30px;
+  strong{
+    font-size: 50px;
+  }
+}
+
+h2{
+  @include texto(26px, 500, $colorTitulo, 40px);
+}
+
+h3{
+  @include texto(24px, 500, $colorTitulo, 40px);
+}
+
+p{
+  @include texto(16px, 400, $colorTexto, 24px);
+}
+
+
+.boton {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: $colorBoton;
+  transition: all .35s ease-in-out;
+  color: $colorBlanco; 
+
     &:hover {
-      color: $colorBlanco; }}
-  
-  ul {
-    list-style: none; }
-  
-  h1, h2, h3, h4, h5, p, a {
-    font-family:  Source Sans Pro, Helvetica, sans-serif;
-    text-align: center;
-    color: $colorTexto; }
-
-  
-
-  h1{
-    @include texto(30px, 600, $colorTitulo, 44px);
-    padding: 10px;
-    margin-bottom: 30px;
-    strong{
-      font-size: 50px;
-    }
-  }
-
-  h2{
-    @include texto(26px, 500, $colorTitulo, 40px);
-  }
-
-  h3{
-    @include texto(24px, 500, $colorTitulo, 40px);
-  }
-
-  p{
-    @include texto(16px, 400, $colorTexto, 24px);
-  }
-
-  
-  .boton {
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-    background-color: $colorBoton;
-    transition: all .35s ease-in-out;
-    color: $colorBlanco; 
-  
-      &:hover {
-        cursor: pointer;
-        background-color: $colorBtnHover;
-        scale: 1.1; }}
-  
+      cursor: pointer;
+      background-color: $colorBtnHover;
+      scale: 1.1; }}

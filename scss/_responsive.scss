@@ -1,4 +1,13 @@
 @media only screen and (min-width: 768px){
+
+    /* Menu */
+
+    .navbar-dark{
+        .navbar-toggler {
+            left: 85%;
+        }
+    }
+
     /* Especialidades */
     .especialidades{
         margin: 30px 30px 0 30px;
@@ -13,10 +22,16 @@
             }
         }
     }
-    
+    /* Sobre Mi */
 
     .sobreMi p{
-        margin-left: 50px;
+        margin-left: 60px;
+        @include texto(20px, 400, $colorTexto, 30px); 
+        margin-top: 0px;  
+    }
+
+    .curriculum{
+        margin: 0 40px;
     }
 
     .nombre{
@@ -38,22 +53,15 @@
             font-size: 40px;
         }   
     }
-
-    
-
 }
 
 @media only screen and ( min-width: 996px){
     .formu{
         max-width: 70vw;
     }
-    
-    .fondoIndex{
-        .fondoIndex__container{
-            p{
-                margin-top: 0;
-            }
-        }
+
+    .sobreMi p{
+        margin-top: 50px;  
     }
 }
 

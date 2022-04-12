@@ -1,7 +1,7 @@
 .contacta{
     padding: 20px 0;
     color: $colorPrincipal;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -23,11 +23,12 @@
         height: 25px;
         border-radius: 5px;
         border: 2px solid $principalHover;
-        background: #84afd415;
+        background: #84afd438;
         transition: all .1s linear;
 
         &:focus{
             transform: scaleY(1.25);
+            background-color: $colorBlanco;
         }
     }
 
